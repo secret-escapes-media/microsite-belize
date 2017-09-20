@@ -1,0 +1,86 @@
+---
+layout: explore
+id: explore
+title: Explore
+nav-order: 2
+intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo earum quae, numquam magnam, necessitatibus consequatur placeat id aliquam veniam explicabo maxime iusto officiis aperiam. Unde quos, reprehenderit ea beatae in.
+---
+
+<div class="section bg--paper">
+  <div class="row row--padding row--xl text--center">
+    <p class="title title--sm title--italic title--thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit ea labore sunt totam aliquid</p>
+    <div class="space--sm"></div>
+    <div class="line-length--lg ">
+      <p class="text--lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quidem, illum dolor maiores officiis, provident velit, quisquam laboriosam nesciunt impedit, ipsam ipsum. Culpa unde numquam laboriosam? At nesciunt nemo, mollitia.</p>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="row row--padding">
+    <div class="row row--xxl row--6-6-gutters">
+    {% assign site-guides = site.html_pages | where: 'layout', 'guide' | sort: 'group-order' %}
+    {% for guide in site-guides %}
+      <div class="col">
+        <div class="bg-img bg-img--2-3 bg-img--hover" style="background-image: url('{{site.baseurl}}/img/bg/{{guide.id}}-guide.jpg');">
+          <a href="{{site.baseurl}}{{guide.url}}" class="bg-img__link"></a>
+          <div class="bg-img__content">
+            <div class="title title--xxl title--display title--italic">{{guide.title}}</div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="row row--padding">
+    <div class="row text--center">
+      <h3 class="title title--lg">Top Picks</h3>
+      <p class="text--lg line-length--lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatem, corporis deleniti veniam tempora ullam cumque asperiores quia doloremque optio iste incidunt quod iure, officiis quo maiores ratione cupiditate ea!</p>
+    </div>
+    <div class="row row--xxl row--6-6-gutters">
+      <div class="col">
+        <div class="bg-img bg-img--3-2"></div>
+        <div class="space--md"></div>
+        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
+        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
+      </div>
+      <div class="col">
+        <div class="bg-img bg-img--3-2"></div>
+        <div class="space--md"></div>
+        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
+        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
+      </div>
+      <div class="col">
+        <div class="bg-img bg-img--3-2"></div>
+        <div class="space--md"></div>
+        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
+        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
+      </div>
+      <div class="col">
+        <div class="bg-img bg-img--3-2"></div>
+        <div class="space--md"></div>
+        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
+        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
+      </div>
+      <div class="col">
+        <div class="bg-img bg-img--3-2"></div>
+        <div class="space--md"></div>
+        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
+        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
+      </div>
+      <div class="col">
+        <div class="bg-img bg-img--3-2"></div>
+        <div class="space--md"></div>
+        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
+        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
+      </div>
+    </div>
+    <div class="row text--center">
+      <a href="{{site.baseurl}}/explore/coast" class="btn btn--lg btn--grad-blue">See More</a>
+    </div>
+    <div class="space--md"></div>
+  </div>
+</div>

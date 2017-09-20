@@ -1,0 +1,18 @@
+# Site settings
+title: Belize
+client:
+  name: Belize Tourism Board
+  link: https://www.travelbelize.org/
+description: >
+  Belize is an utterly beguiling land that still retains an untamed, uncharted mystique. It has avoided the the stampede of tourists that tend to unintentionally inspire endless developments and the destruction of natural habitats. Instead, it is a country rooted to its tropical rainforest interior and its Caribbean coastline.
+baseurl: "/belize" # the subpath of your site, e.g. /blog/
+url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
+
+
+# Build settings
+markdown: kramdown
+exclude: [node_modules, gulpfile.js, package.json, package-lock.json, js/script.js]
+keep_files: [js/scripts.min.js]
+sass:
+    sass_dir: css
+    style: compressed
