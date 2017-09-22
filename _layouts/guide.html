@@ -22,7 +22,7 @@ layout: explore
       <div class="row row--4-4-4-gutters">
         {% for poi in section.pois %}
         <div class="col">
-          <div class="bg-img bg-img--3-2"></div>
+          <div class="bg-img bg-img--3-2" style="background-image: url({{site.baseurl}}/img/content/pois/{{poi.title|slugify}}.jpg);"></div>
           <div class="space--md"></div>
           <h4 class="title--xxs title--display title--bold title--upper title--kerning">{{poi.title}}</h4>
           <p class="text--small">{{poi.description}}</p>

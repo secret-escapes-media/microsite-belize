@@ -22,12 +22,7 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo earum quae
     {% assign site-guides = site.html_pages | where: 'layout', 'guide' | sort: 'group-order' %}
     {% for guide in site-guides %}
       <div class="col">
-        <div class="bg-img bg-img--2-3 bg-img--hover" style="background-image: url('{{site.baseurl}}/img/bg/{{guide.id}}-guide.jpg');">
-          <a href="{{site.baseurl}}{{guide.url}}" class="bg-img__link"></a>
-          <div class="bg-img__content">
-            <div class="title title--xxl title--display title--italic">{{guide.title}}</div>
-          </div>
-        </div>
+        {% include components/guide.html %}
       </div>
     {% endfor %}
     </div>
@@ -36,51 +31,44 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo earum quae
 
 <div class="section">
   <div class="row row--padding">
+
     <div class="row text--center">
       <h3 class="title title--lg">Top Picks</h3>
       <p class="text--lg line-length--lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatem, corporis deleniti veniam tempora ullam cumque asperiores quia doloremque optio iste incidunt quod iure, officiis quo maiores ratione cupiditate ea!</p>
     </div>
-    <div class="row row--xxl row--6-6-gutters">
+
+
+    <!-- TOP POIS -->
+    <div class="row">
+
+      {% assign top-pois = site.data.pois | where:"feature","true" %}
+      {% for poi in top-pois %}
+      {% capture loopindex %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
+      {% if loopindex == '0' or forloop.first %}
+      <div class="row row--xxl row--6-6-gutters">
+      {% endif %}
+
       <div class="col">
-        <div class="bg-img bg-img--3-2"></div>
+        <div class="bg-img bg-img--3-2" style="background-image: url({{site.baseurl}}/img/content/pois/{{poi.title|slugify}}.jpg);"></div>
         <div class="space--md"></div>
-        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
-        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
+        <h4 class="title--xxs title--display title--bold title--upper title--kerning">{{poi.title}}</h4>
+        <p class="text--small">{{poi.description}}</p>
       </div>
-      <div class="col">
-        <div class="bg-img bg-img--3-2"></div>
-        <div class="space--md"></div>
-        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
-        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
+
+      {% if loopindex == '1' or forloop.last %}
       </div>
-      <div class="col">
-        <div class="bg-img bg-img--3-2"></div>
-        <div class="space--md"></div>
-        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
-        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
-      </div>
-      <div class="col">
-        <div class="bg-img bg-img--3-2"></div>
-        <div class="space--md"></div>
-        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
-        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
-      </div>
-      <div class="col">
-        <div class="bg-img bg-img--3-2"></div>
-        <div class="space--md"></div>
-        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
-        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
-      </div>
-      <div class="col">
-        <div class="bg-img bg-img--3-2"></div>
-        <div class="space--md"></div>
-        <h4 class="title--xxs title--display title--bold title--upper title--kerning">Lorem ipsum dolor sit amet</h4>
-        <p class="text--small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga enim temporibus tempora numquam natus repellat modi debitis magnam voluptatem! Illum doloremque ea obcaecati expedita nesciunt, nulla facere dolores quidem.</p>
-      </div>
-    </div>
+      {% endif %}
+      {% endfor %}
+
+    </div><!-- end TOP POIS -->
+
+
+
     <div class="row text--center">
       <a href="{{site.baseurl}}/explore/coast" class="btn btn--lg btn--grad-blue">See More</a>
     </div>
+
     <div class="space--md"></div>
+
   </div>
 </div>
