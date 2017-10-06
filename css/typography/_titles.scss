@@ -13,6 +13,8 @@
     line-height: 1.25;
   }
 
+  &--color { color: $headline; }
+
   & + *         { padding-top: .75em; }
   &--sub        { padding-top: 0 !important; }
   &--super + *  { padding-top: 0 !important; }
