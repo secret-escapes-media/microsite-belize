@@ -3,18 +3,24 @@ layout: explore
 id: explore
 title: Explore
 nav-order: 2
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo earum quae, numquam magnam, necessitatibus consequatur placeat id aliquam veniam explicabo maxime iusto officiis aperiam. Unde quos, reprehenderit ea beatae in.
+
+
+intro: >
+  <p class="title title--md title--italic title--thin title--display">Let Belize inspire you.</p>
+  <p class="text--xl line-length--lg">We’ve created these guides to help you unpick this tropical idyll. From the jungle interior to the breathtaking coastline, discover what Belize has to offer here.</p>
+
+
 ---
+
+
 
 <div class="section bg--paper">
   <div class="row row--padding row--xl text--center">
-    <p class="title title--sm title--italic title--thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit ea labore sunt totam aliquid</p>
-    <div class="space--sm"></div>
-    <div class="line-length--lg ">
-      <p class="text--lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quidem, illum dolor maiores officiis, provident velit, quisquam laboriosam nesciunt impedit, ipsam ipsum. Culpa unde numquam laboriosam? At nesciunt nemo, mollitia.</p>
-    </div>
+    {{page.intro}}
   </div>
 </div>
+
+
 
 <div class="section">
   <div class="row row--padding">
@@ -29,43 +35,39 @@ intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo earum quae
   </div>
 </div>
 
+
+
 <div class="section">
   <div class="row row--padding">
 
     <div class="row text--center">
-      <h3 class="title title--lg">Top Picks</h3>
-      <p class="text--lg line-length--lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi voluptatem, corporis deleniti veniam tempora ullam cumque asperiores quia doloremque optio iste incidunt quod iure, officiis quo maiores ratione cupiditate ea!</p>
+      <h3 class="title title--xxl title--italic title--thin title--display">Top Picks</h3>
+      <p class="text--xl">Discover our favourite things to see and do in Belize</p>
     </div>
 
 
     <!-- TOP POIS -->
     <div class="row">
 
-      {% assign top-pois = site.data.pois | where:"feature","true" %}
+      <div class="row row--xxl">
+      {% assign top-pois = site.data.pois %}
       {% for poi in top-pois %}
-      {% capture loopindex %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
-      {% if loopindex == '0' or forloop.first %}
-      <div class="row row--xxl row--6-6-gutters">
-      {% endif %}
 
-      <div class="col">
-        <div class="bg-img bg-img--3-2" style="background-image: url({{site.baseurl}}/img/content/pois/{{poi.title|slugify}}.jpg);"></div>
-        <div class="space--md"></div>
-        <h4 class="title--xxs title--display title--bold title--upper title--kerning">{{poi.title}}</h4>
-        <p class="text--small">{{poi.description}}</p>
-      </div>
+        <div class="featured-poi">
+          <div class="bg-img bg-img--3-2" style="background-image: url({{site.baseurl}}/img/content/pois/{{poi.title|slugify}}.jpg);"></div>
+          <div class="space--md"></div>
+          <h4 class="title--xxs title--display title--bold title--upper title--kerning">{{poi.title}}</h4>
+          <p class="text--small">{{poi.description}}</p>
+        </div>
 
-      {% if loopindex == '1' or forloop.last %}
-      </div>
-      {% endif %}
       {% endfor %}
+      </div>
 
     </div><!-- end TOP POIS -->
 
 
-
     <div class="row text--center">
-      <a href="{{site.baseurl}}/explore/coast" class="btn btn--lg btn--grad-blue">See More</a>
+      <a href="{{site.baseurl}}/explore/coast" class="btn btn--lg btn--grad-blue">See more</a>
     </div>
 
     <div class="space--md"></div>

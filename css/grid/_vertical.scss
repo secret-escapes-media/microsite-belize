@@ -3,12 +3,19 @@
 
 // default sections
 .section {
-  padding-top: $s8;
-  padding-bottom: $s8;
+  padding-top: $s5;
+  padding-bottom: $s5;
+  @include bp(lg){
+    padding-top: $s8;
+    padding-bottom: $s8;
+  }
 }
 
 .row {
-  & + & { margin-top: $s6; }
+  & + & { margin-top: $s4; }
+  @include bp(lg){
+    & + & { margin-top: $s6; }
+  }
 }
 
 .col {

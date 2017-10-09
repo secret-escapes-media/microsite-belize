@@ -5,7 +5,7 @@
 .btn {
   position: relative;
   display: inline-block;
-  padding: $s2 $s6;
+  padding: $s1 $s3;
   color: $text-white;
   font-weight: 600;
   font-size: $s-1;
@@ -15,6 +15,9 @@
   line-height: 1.33;
   border-radius: 3px;
   cursor: pointer;
+  @include bp(lg){
+    padding: $s2 $s6;
+  }
   @include transition;
   * + & { margin-top: 1.5em; }
   &--sm {

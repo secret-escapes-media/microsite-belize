@@ -1,8 +1,10 @@
 // general typographic elements like paragraphs, lists, etc
 
 .text {
-  &--xxl    { font-size: $s3; }
-  &--xl     { font-size: $s2; }
+  @include bp(lg){
+    &--xxl    { font-size: $s3; }
+    &--xl     { font-size: $s2; }
+  }
   &--lg     { font-size: $s1; }
   &--sm     { font-size: $s-1; font-weight: 400; }
   &--left   { text-align: left; }
@@ -19,6 +21,7 @@
 .line-length {
   display: inline-block;  max-width: 40rem;
   &--lg { display: inline-block;  max-width: 47rem; }
+  &--sm { display: inline-block;  max-width: 30rem; }
 }
 
 

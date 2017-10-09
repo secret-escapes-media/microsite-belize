@@ -3,7 +3,10 @@ layout: standard
 id: experts
 title: Experts
 nav-order: 4
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo earum quae, numquam magnam, necessitatibus consequatur placeat id aliquam veniam explicabo maxime iusto officiis aperiam. Unde quos, reprehenderit ea beatae in.
+intro: >
+  <p class="title title--display title--md title--italic title--thin">Meet the people of Belize.</p>
+  <p class="text--xl line-length--lg">Famed for their warm welcomes, meet our Belize experts and discover what it is that makes this country so special... </p>
+
 extra-js: true
 
 
@@ -27,11 +30,7 @@ experts:
 
 <div class="section bg--paper">
   <div class="row row--padding row--xl text--center">
-    <p class="title title--sm title--italic title--thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit ea labore sunt totam aliquid</p>
-    <div class="space--sm"></div>
-    <div class="line-length--lg ">
-      <p class="text--lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quidem, illum dolor maiores officiis, provident velit, quisquam laboriosam nesciunt impedit, ipsam ipsum. Culpa unde numquam laboriosam? At nesciunt nemo, mollitia.</p>
-    </div>
+    {{page.intro}}
   </div>
 </div>
 
@@ -44,12 +43,12 @@ experts:
 
     <div class="row row--xl js-interview">
       <div class="row text--center">
-        <h3 class="title title--xl title--italic title--color">{{expert.title}}</h3>
+        <h3 class="title title--xl title--italic title--color title--display">{{expert.title}}</h3>
         <h4 class="title title--xxs title--bolder title--upper title--kerning title--color">{{expert.subtitle}}</h4>
       </div>
       <div class="row row--5-7-gutters">
         <div class="col">
-          <div class="bg-img bg-img--16-9 bg-img--lg-3-4" style="background-image: url('{{site.baseurl}}/img/content/experts/{{expert.title|slugify}}.jpg');"></div>
+          <div class="bg-img bg-img--3-2 bg-img--lg-1-1" style="background-image: url('{{site.baseurl}}/img/content/experts/{{expert.title|slugify}}.jpg');"></div>
         </div>
         <div class="col">
           {{expert.content}}

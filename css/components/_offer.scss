@@ -75,7 +75,6 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 600;
-    color: $text-light;
     &:before {
       content: "";
       display: inline-block;
@@ -141,7 +140,7 @@
   }
   &__arrow {
     display: none;
-    @include bp(sm){
+    @include bp(md){
       display: inline-block;
       width: $circle-height;
       height: $circle-height;
@@ -155,10 +154,11 @@
     }
   }
   &__bottom {
+    width: 100%;
+    padding-top: $s1;
     @include bp(sm){
-      display: table;
-      width: 100%;
       padding-top: $s2;
+      display: table;
       * { vertical-align: middle; }
       strong,
       span { vertical-align: baseline; }
@@ -173,5 +173,28 @@
         }
       }
     }
+  }
+
+
+  // Style changes to signify non-SE offers
+  &--direct {
+    & .offer__bottom-item {
+      border-top: 1px solid $grey-lighter;
+      padding-top: 1rem;
+      & .offer__details { padding-left: 0; }
+      & .offer__saved { display: none; }
+    }
+  }
+
+  &--direct &__price { color: $grey-darker; }
+  &--direct &__location:before {
+    content: "";
+    background-image: url( "../img/icons/map-pin-black.png" );
+    .svg & { background-image: url( "../img/icons/map-pin-black.svg" ); }
+  }
+  &--direct &__arrow {
+    border: 1px solid $grey-light;
+    background-image: url('../img/icons/arrow-right-black.png');
+    .svg & { background-image: url('../img/icons/arrow-right-black.svg'); }
   }
 }

@@ -29,11 +29,11 @@
   &--upper      { text-transform: uppercase; }
   &--italic     { font-style: italic; }
 
-  &--display-size { font-size: $s11; }
-  &--xxxxxl       { font-size: $s9; }
-  &--xxxxl        { font-size: $s8; }
-  &--xxxl         { font-size: $s7; }
-  &--xxl          { font-size: $s6; }
+  &--display-size { font-size: $s9; }
+  &--xxxxxl       { font-size: $s7; }
+  &--xxxxl        { font-size: $s6; }
+  &--xxxl         { font-size: $s6; }
+  &--xxl          { font-size: $s5; }
   &--xl           { font-size: $s5; }
   &--lg           { font-size: $s4; }
   &--md           { font-size: $s3; }
