@@ -7,7 +7,7 @@
   se-offer: true
   location: Ambergris Caye, Belize
   description: A blissful villa stay at a Belize beach resort
-  price: 103
+  price: £103
   price-description: per villa per night
   saved: 22
   link: https://www.secretescapes.com/xtan-ha-the-waterfront-resort-ambergris-caye-belize/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Belize_Oct2017
@@ -17,7 +17,7 @@
   se-offer: true
   location: Stann Creek, San Ignacio, Orange Walk Town & San Pedro
   description: A Caribbean island adventure from blissful beach to vibrant jungle
-  price: 2989
+  price: £2,989
   price-description: per person for 12 nights
   saved: 20
   link: https://www.secretescapes.com/breathtaking-belize-wildlife-and-beach-adventure-stann-creek-san-ignacio-orange-walk-town-and-san-pedro/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Belize_Oct2017
@@ -27,12 +27,12 @@
 
 ## Offers linking out to external hotel sites
 ## ==============================================
-#
-# - title: Beaches and Dreams Seafront Inn
-#   id: beaches-and-dreams-seafront-inn
-#   location: Hopkins, Belize
-#   description: Wake up to sounds and views of the Caribbean Sea in a luxury beachfront hotel room
-#   price: 999
-#   price-description: per person per night
-#   saved:
-#   link:
+
+- title: Beaches and Dreams Seafront Inn
+  id: beaches-and-dreams-seafront-inn
+  location: Hopkins, Belize
+  description: Wake up to sounds and views of the Caribbean Sea in a luxury beachfront hotel room
+  price: $112
+  price-description: per room per night
+  saved:
+  link: http://bit.ly/secret-escapes-beaches-and-dreams
