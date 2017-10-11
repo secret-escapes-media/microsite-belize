@@ -1,11 +1,13 @@
 // general typographic elements like paragraphs, lists, etc
 
 .text {
+  &--xxl    { font-size: $s1; }
+  &--xl     { font-size: $s1; }
   @include bp(lg){
     &--xxl    { font-size: $s3; }
     &--xl     { font-size: $s2; }
   }
-  &--lg     { font-size: $s1; }
+  &--lg     { font-size: $s0; }
   &--sm     { font-size: $s-1; font-weight: 400; }
   &--left   { text-align: left; }
   &--right  { text-align: right; }
@@ -16,6 +18,7 @@
   &--blue   { color: $b-blue; }
   &--cyan   { color: $b-cyan; }
   &--green  { color: $b-green; }
+
 }
 
 .line-length {

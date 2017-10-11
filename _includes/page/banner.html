@@ -1,18 +1,20 @@
 <div class="banner">
-  <div class="banner__bg" style="background-image: url({{site.baseurl}}/img/bg/{{page.id}}.jpg);"></div>
-  <div class="banner__content">
-    <div class="row title-bg">
-      {% if page.banner.content %}
+  <div class="banner__wrap">
+    <div class="banner__bg" style="background-image: url({{site.baseurl}}/img/bg/{{page.id}}.jpg);"></div>
+    <div class="banner__content">
+      <div class="row title-bg">
+        {% if page.banner.content %}
         {{page.banner.content}}
-      {% else %}
+        {% else %}
         {% if page.banner.title-super %}<div class="title title--display title--super title--xs title--upper title--kerning-lg">{{page.banner.title-super}}</div>{% endif %}
           {% if page.banner.title %}
-          <h1 class="title title--display title--display-size title--light title--italic">{{page.banner.title}}
+            <h1 class="title title--display title--display-size title--light title--italic">{{page.banner.title}}
           {% else %}
-          <h1 class="title title--display title--xxxxl title--light title--italic">{{page.title}}
+            <h1 class="title title--display title--xxxxl title--light title--italic">{{page.title}}
           {% endif %}</h1>
-        {% if page.banner.title-sub %}<div class="title title--display title--sub title--xs title--upper title--kerning-lg">{{page.banner.title-sub}}</div>{% endif %}
-      {% endif %}
+          {% if page.banner.title-sub %}<div class="title title--display title--sub title--xs title--upper title--kerning-lg">{{page.banner.title-sub}}</div>{% endif %}
+        {% endif %}
+      </div>
     </div>
   </div>
 </div>

@@ -53,9 +53,16 @@ if ("ontouchstart" in document.documentElement){
 
   // current page nav highlight
   var currentPage     = $('body').data('current-page');
+  var currentGroup    = $('body').data('current-group');
 
-  // add class to individual nav item
-  $('.page--' + currentPage + ' [class*=nav__item--' + currentPage + ']').addClass('is-current');
+  if (currentGroup) {
+    // add class to individual nav item
+    $('[class*=nav__item--' + currentGroup + ']').addClass('is-current');
+  } else {
+    // add class to individual nav item
+    $('.page--' + currentPage + ' [class*=nav__item--' + currentPage + ']').addClass('is-current');
+  }
+
 
   // var currentCategory = $('body').data('current-category');
   // // if there is a category, add class to category nav item
