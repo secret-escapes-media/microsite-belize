@@ -9,7 +9,7 @@ function modalOpen(event){
   $('body').addClass('disable-scroll');
 
   // find the modal id & element
-  var activeModalId = $(event.target).data('open-modal'),
+  var activeModalId = $(event.currentTarget).data('open-modal'),
       activeModal   = $('*[data-modal-id="' + activeModalId + '"]');
 
   // builds youtube video if needed
@@ -36,10 +36,10 @@ function modalClose(event){
   // enable scrolling
   $('body').removeClass('disable-scroll');
   // close modal with fade
-  $('.modal.is-open').fadeOut('250', function(){
+  $('.modal__bg.is-open').fadeOut('250', function(){
     // close modal and active modal content
     $(this).removeClass('is-open').addClass('is-closed');
-    $('.modal__content-wrap.is-open').removeClass('is-open').addClass('is-closed');
+    $('.modal.is-open').removeClass('is-open').addClass('is-closed');
     // kill everything inside of video if its there
     $('.modal__video').empty();
   });
@@ -58,18 +58,9 @@ modalCloseBtn.on('click', function(event) {
 
 // closes modal on background click
 modal.on('click', function(event) {
-  if (event.target !== this){
-    return;
+  if ($(event.target).hasClass('modal__bg')){
+    modalClose(event);
   }
-  modalClose(event);
-});
-
-// DUPLICATED - closes modal on background click
-$('.js-modal-youtube').on('click', function(event) {
-  if (event.target !== this){
-    return;
-  }
-  modalClose(event);
 });
 
 // closes modal on escape key press
