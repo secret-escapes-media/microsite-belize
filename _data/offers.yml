@@ -1,4 +1,3 @@
-
 ## Secret Escapes offers
 ## ==============================================
 
@@ -32,6 +31,15 @@
   saved: 52
   link: https://www.secretescapes.com/costa-blu-adults-only-beach-resort-ambergris-caye-belize/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Belize_Oct2017
 
+- title: Belizean Shores
+  id: belizean-shores
+  se-offer: true
+  location: Ambergris Caye, Belize
+  description: A sun-kissed Caribbean-island beach resort
+  price: £83
+  price-description: per suite per night
+  saved: 22
+  link: https://www.secretescapes.com/belizean-shores-ambergris-caye-belize/sale?utm_source=SE&utm_medium=Media&utm_campaign=Belize_Oct2017
 
 
 
