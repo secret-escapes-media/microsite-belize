@@ -11,16 +11,6 @@
   saved: 22
   link: https://www.secretescapes.com/xtan-ha-the-waterfront-resort-ambergris-caye-belize/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Belize_Oct2017
 
-- title: Breathtaking Belize wildlife & beach adventure
-  id: breathtaking-belize-wildlife-beach-adventure
-  se-offer: true
-  location: Stann Creek, San Ignacio, Orange Walk Town & San Pedro
-  description: A Caribbean island adventure from blissful beach to vibrant jungle
-  price: £2,989
-  price-description: per person for 12 nights
-  saved: 20
-  link: https://www.secretescapes.com/breathtaking-belize-wildlife-and-beach-adventure-stann-creek-san-ignacio-orange-walk-town-and-san-pedro/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Belize_Oct2017
-
 - title: Costa Blu Adults Only Beach Resort
   id: costa-blu-adults-only-beach-resort
   se-offer: true
@@ -40,6 +30,16 @@
   price-description: per suite per night
   saved: 22
   link: https://www.secretescapes.com/belizean-shores-ambergris-caye-belize/sale?utm_source=SE&utm_medium=Media&utm_campaign=Belize_Oct2017
+
+- title: All-inclusive Belize beach break with tours & a Miami stopover
+  id: all-inclusive-belize-beach-break-with-tours-a-miami-stopover
+  se-offer: true
+  location: Hopkins, Belize
+  description: An incredible Belize getaway with tours and a Miami stopover
+  price: £2899
+  price-description: per person for 9 nights
+  saved: 20
+  link: https://www.secretescapes.com/unforgettable-miami-and-all-inclusive-belize-break-with-exciting-tours-pullman-miami-airport-hotel-florida-and-almond-beach-resort-and-spa-hopkins/sale?utm_source=SE&utm_campaign=Belize_2017
 
 
 
