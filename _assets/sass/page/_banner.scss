@@ -27,6 +27,20 @@
     overflow: hidden;
     @include page-padding;
   }
+  &__title-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 236px;
+    width: 699px;
+    margin-top: -118px;
+    margin-left: -349.5px;
+    background-image: url(../img/background/title-bg-blue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    mix-blend-mode: multiply;
+  }
   &__bg {
     position: absolute;
     top: 0;

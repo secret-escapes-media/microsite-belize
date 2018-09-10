@@ -40,4 +40,8 @@
       &:before { border-color: $orange; }
     }
   }
+
+  &--primary { background-color: $belize;
+    &:hover { background-color: darken($belize,10); }
+  }
 }

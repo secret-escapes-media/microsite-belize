@@ -2,7 +2,40 @@
 layout: default
 ---
 
-<div class="container vpad--xxl text--center">
-  <h1 class="title title--lg">{{page.title}}</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit aliquam reprehenderit magni eius, esse quisquam minima inventore, adipisci excepturi. Quibusdam sequi eum labore vitae recusandae aliquam commodi, consectetur itaque.</p>
+<div class="bg-paper">
+  <div class="container container--xxl vpad--xxl text--center">
+    {{page.intro}}
+  </div>
 </div>
+
+
+<div class="vpad--xxxl">
+  {% for section in page.sections %}
+  <div class="container">
+    <div class="wp" id="{{section.id}}"></div>
+
+    <div class="width width--xl">
+      <h2 class="title title--xl text--italic">{{section.title}}</h2>
+      <p class="text--xl">{{section.content}}</p>
+    </div>
+
+    <!-- Highlights -->
+    <div class="space--xl">
+      <div class="row">
+        {% for highlight in section.highlights %}
+          <div class="col col--4">
+            <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{highlight.id}}.jpg);"></div>
+            <div class="space--sm">
+              <h4 class="title title--xxs text--bold">{{highlight.title}}</h4>
+              <p>{{highlight.content}}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+{% include page/promo-competition.html %}

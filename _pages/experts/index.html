@@ -1,0 +1,63 @@
+---
+layout: default
+id: experts
+title: Experts
+nav: true
+nav-order: 4
+content-pages: true
+
+intro: >
+  <p class="text--xl">Meet the people of Belize.</p>
+  <p class="text--xl">Famed for their warm welcomes, meet our Belize experts and discover what it is that makes this country so special...</p>
+
+experts:
+
+  - id: ralph-capeling
+    name: Ralph Capeling
+    position: Splash Dive Centre
+    content: >
+      <p>Hey! I’m Ralph and I co-own the Splash Dive Centre in Placencia. We’re an award-winning centre specialising in getting you under the water to explore Belize’s unique underwater world! Let us take you out to sea to explore our famed coral reef, diving deep and discovering a colourful aquatic world like no other. Once we head back, Placencia is a great place to relax. A laid-back fishing village, there’s plenty of restaurants to pick from.</p>
+      <p>Belize is one special place – it was the center of the ancient Maya world with more Maya sites per square kilometer than anywhere else, and it has the longest barrier reef in the northern hemisphere plus the famous Blue Hole – all great diving spots! All of this and more is packed into the smallest country with the lowest population density in Central America. Dive pristine waters at the atolls or explore the barrier reef and meet the myriad of critters that call Belize home. Visit during the full moon in March, April, May and June when the whale sharks come to feast on the snapper spawning aggregation – one of the few places in the world you can plan whale shark dives.</p>
+
+  - id: bruno-kuppinger
+    name: Bruno Kuppinger
+    position: Tour Operator
+    content: >
+      <p>Hi I’m Bruno and I run Toledo Cave & Adventure Tours. We conduct tours that cover truly unique Belizean experiences! From cocoa trails with our friend Eladio Pop, to Maya tours and cave tours, we aim to bring visitors a true sense of what Belize is all about. Originally from Germany, I consider myself fully Belizean, having received the characteristic warm welcome that many experience in this country.</p>
+      <p>Many who arrive in Belize are surprised by the diversity of people, with so many different cultures and ethnic groups living and working peacefully together. In Belize, our diverse ethnic origins have created a true melting pot of culinary adventures. Belize is a haven for wildlife, with more than 60% of the country still covered with forest and more than 40% of our land protected. Belize is a fantastic place for family-friendly adventure – climbing to the top of ancient Maya temples, exploring hidden waterfalls or secret caves, or walking through our pristine jungles.</p>
+
+---
+
+
+<div class="bg-paper">
+  <div class="container container--xxl vpad--xxl text--center">
+    {{page.intro}}
+  </div>
+</div>
+
+
+<div class="vpad--xxl">
+  {% for expert in page.experts %}
+  <div class="container container--xxl">
+    <div class="text--center">
+      <h2 class="title title--xl text--italic">{{expert.name}}</h2>
+      <div class="space--xs"></div>
+      <h4 class="title title--xxs text--bold text--upper">{{expert.position}}</h4>
+      <div class="space--md"></div>
+    </div>
+
+    <div class="row">
+      <div class="col col--5">
+        <div class="bg-img bg-img--1-1 bg-img--circle" style="background-image: url({{site.img}}/content/{{page.id}}/{{expert.id}}.jpg);"></div>
+      </div>
+      <div class="col col--7">
+        {{expert.content}}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+{% include page/promo-competition.html %}
+
