@@ -64,9 +64,9 @@
   // custom content headline
   font-family: $font-title-01;
   font-size: $s2; // default size
-  text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   &--lg     { font-size: $s4; }
   &--sm     { font-size: $s0; }
   @include bp($lg){
@@ -82,6 +82,7 @@
   // custom banner headline
   font-family: $font-title-01;
   font-size: $s5;
+  font-weight: 600;
   line-height: 1;
   font-style: italic;
   @include bp($md){ font-size: $s7; }

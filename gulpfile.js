@@ -109,6 +109,7 @@ gulp.task('build-main-js', function(cb) {
     // plugins
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/jquery-countdown/dist/jquery.countdown.min.js',
+    './_assets/js/_components/simpleWeather.min.js',
     // './node_modules/waypoints/lib/jquery.waypoints.min.js',
 
     // custom js - with on doc ready wrapper

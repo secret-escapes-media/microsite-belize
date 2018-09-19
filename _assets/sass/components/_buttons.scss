@@ -44,4 +44,10 @@
   &--primary { background-color: $belize;
     &:hover { background-color: darken($belize,10); }
   }
+
+  &--white {
+    background-color: rgba($white,0.9);
+    color: $grey-darkest;
+    &:hover { background-color: $white; }
+  }
 }

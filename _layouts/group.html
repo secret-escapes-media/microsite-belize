@@ -16,11 +16,12 @@ layout: default
       {% for subpage in subpages %}
       <div class="col">
         <div class="bg-img bg-img--3-4" style="background-image: url({{site.img}}/content/{{subpage.id}}/banner.jpg);">
-          <a href="{{subpage.url}}" class="bg-img__link"></a>
+          <a href="{{site.baseurl}}{{subpage.url}}" class="bg-img__link"></a>
           <div class="bg-img__content">
             <div class="boxpad--sm">
-              <p class="title title--xxs text--bold text--upper">Our guide to</p>
-              <h2 class="title title--xl text--italic">{{subpage.title}}</h2>
+              <p class="title title--xxs text--bold text--wide-kern text--upper">Our guide to</p>
+              <h2 class="title title--xl text--bold text--italic">{{subpage.title}}</h2>
+              <hr class="hr--center hr--white">
               <p class="text--lg text--normal">{{subpage.parent-intro}}</p>
             </div>
           </div>

@@ -57,3 +57,18 @@ function getQueryStringByName(name, url) {
   if (!results[2]) return true;
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+
+///////////////////////////////////////
+//   Belize weather
+///////////////////////////////////////
+
+$.simpleWeather({
+	location: 'Belize City, Belize, BZ',
+	unit: 'c',
+	success: function(weather) {
+    $('#temperature').html(weather.temp);
+	},
+	error: function(error) {
+		console.log(error);
+	}
+});

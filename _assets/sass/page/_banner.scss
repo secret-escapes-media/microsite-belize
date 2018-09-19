@@ -31,10 +31,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 236px;
-    width: 699px;
-    margin-top: -118px;
-    margin-left: -349.5px;
+    height: 286px;
+    width: 700px;
+    margin-top: -143px;
+    margin-left: -350px;
     background-image: url(../img/background/title-bg-blue.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -71,6 +71,26 @@
     &--top {
       top: 0;
       bottom: auto;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 11;
+  }
+  &__weather {
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 10;
+    width: 280px;
+    padding-top: $s-2;
+    display: inline-block;
+    text-align: left;
+    &-temperature {
+      display: block; float: left;
+      margin-right: $s-1;
+      font-size: $s5;
+      font-weight: 700;
     }
   }
 }

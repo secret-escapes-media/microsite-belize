@@ -1,5 +1,5 @@
 ---
-layout: offers
+layout: default
 id: offers
 title: Offers
 nav: true
@@ -9,3 +9,15 @@ intro: >
   <p class="text--xl">Win £1,000 to spend in Belize</p>
   <p class="text--xl">Book 5 nights or more to Belize with Secret Escapes and be in with a chance to win £1,000 spending money</p>
 ---
+
+<div class="bg-paper">
+  <div class="container container--xxl vpad--xxl text--center">
+    {{page.intro}}
+  </div>
+</div>
+
+<div class="bg--white">
+  {% include offer/all-offers.html %}
+</div>
+
+{% include page/promo-offers.html %}
