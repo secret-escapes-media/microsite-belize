@@ -7,8 +7,8 @@ nav-order: 4
 content-pages: true
 
 intro: >
-  <p class="text--xl">Meet the people of Belize.</p>
-  <p class="text--xl">Famed for their warm welcomes, meet our Belize experts and discover what it is that makes this country so special...</p>
+  <p class="title title--sm text--italic">Meet the people of Belize.</p>
+  <p class="text--xxl">Famed for their warm welcomes, meet our Belize experts and discover what it is that makes this country so special...</p>
 
 experts:
 
@@ -30,31 +30,37 @@ experts:
 
 
 <div class="bg-paper">
-  <div class="container container--xxl vpad--xxl text--center">
+  <div class="container container--xl vpad--xxl text--center">
     {{page.intro}}
   </div>
 </div>
 
 
-<div class="vpad--xxl">
-  {% for expert in page.experts %}
-  <div class="container container--xxl">
-    <div class="text--center">
-      <h2 class="title title--xl text--italic">{{expert.name}}</h2>
-      <div class="space--xs"></div>
-      <h4 class="title title--xxs text--medium text--upper text--wide-kern">{{expert.position}}</h4>
-      <div class="space--md"></div>
-    </div>
+<div class="vpad--xl">
 
-    <div class="row">
-      <div class="col col--5">
-        <div class="bg-img bg-img--1-1 bg-img--circle" style="background-image: url({{site.img}}/content/{{page.id}}/{{expert.id}}.jpg);"></div>
+  {% for expert in page.experts %}
+  <div class="vpad--xl">
+    <div class="container container--xxl">
+      <div class="text--center">
+        <h2 class="title title--xl text--bold text--italic">{{expert.name}}</h2>
+        <div class="space--xs"></div>
+        <h4 class="title title--xxs text--medium text--upper text--wide-kern">{{expert.position}}</h4>
+        <div class="space--xl"></div>
       </div>
-      <div class="col col--7">
-        {{expert.content}}
+
+      <div class="row">
+        <div class="col col--5">
+          <div class="bg-img bg-img--1-1 bg-img--circle expert__image" style="background-image: url({{site.img}}/content/{{page.id}}/{{expert.id}}.jpg);"></div>
+        </div>
+        <div class="col col--7">
+          {{expert.content}}
+        </div>
       </div>
     </div>
   </div>
+  {% unless forloop.last %}
+    <hr class="hr--center">
+  {% endunless %}
   {% endfor %}
 </div>
 
