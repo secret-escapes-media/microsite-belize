@@ -1,17 +1,5 @@
 
 
-
-- title: Belize & Guatemala tour unearthing the ancient Maya
-  id: belize-guatemala-tour-unearthing-the-ancient-maya
-  location: Crooked Tree, Placencia, San Ignacio, Tikal & Caye Caulker
-  description: Mayan history and beach bliss combine with this Belize and Guatemala holiday
-  price: 1436
-  price-description: per person for 13 nights
-  saved: 20
-  expires: 2018/10/22
-  link: https://www.secretescapes.com/belize-and-guatemala-tour-unearthing-the-ancient-maya-crooked-tree-placencia-san-ignacio-tikal-and-caye-caulker/sale?utm_source=SE_Media&utm_medium=Belize&utm_campaign=October2018
-
-
 - title: Intimate beach resort on Ambergris Caye
   id: intimate-beach-resort-on-ambergris-caye
   location: Portofino Beach Resort, Ambergris Caye, Belize
@@ -23,28 +11,6 @@
   link: https://www.secretescapes.com/portofino-beach-resort-ambergris-caye-belize/sale?gce_hpp=1&utm_source=SE_media&utm_medium=Belize&utm_campaign=October2018
 
 
-- title: Intrepid Belize adventure with nature tours & Maya ruins
-  id: intrepid-belize-adventure-with-nature-tours-maya-ruins
-  location: Burrell Boom, San Ignacio & San Pedro
-  description: Maya ruins, nature reserves and zip-lining in Belize
-  price: 1899
-  price-description: per person for 10 nights
-  saved: 20
-  expires: 2018/10/28
-  link: https://www.secretescapes.com/intrepid-belize-adventure-with-nature-tours-and-mayan-ruins-burrell-boom-san-ignacio-and-san-pedro/sale?gce_hpp=1&utm_source=SE_media&utm_medium=Belize&utm_campaign=October2018
-
-
-- title: Tropical rainforests & beach bliss in Belize
-  id: tropical-rainforests-beach-bliss-in-belize
-  location: Bocawina Rainforest Resort & Jaguar Reef Beach Resort & Spa, Hopkins
-  description: Discover incredible natural scenery in Belize’s forests and beach
-  price: 861
-  price-description: per person for 7 nights
-  saved: 25
-  expires: 2018/10/28
-  link: https://www.secretescapes.com/tropical-rainforests-and-beach-bliss-in-belize-bocawina-rainforest-resort-and-jaguar-reef-beach-resort-and-spa/sale?gce_hpp=1&utm_source=SE_media&utm_medium=Belize&utm_campaign=October2018
-
-
 - title: All-suite retreat near Belize's Great Barrier Reef
   id: all-suite-retreat-near-belize-s-great-barrier-reef
   location: Banyan Bay Suites, San Pedro, Belize
@@ -54,5 +20,16 @@
   saved: 32
   expires: 2018/10/28
   link: https://www.secretescapes.com/banyan-bay-suites-san-pedro-belize/sale?utm_source=SE_media&utm_medium=Belize&utm_campaign=October2018
+
+
+- title: The Ellysian Boutique Hotel
+  id: the-ellysian-boutique-hotel
+  location: Placencia Village, Belize
+  description: A tranquil stay on the soft sands of Belize, in a laid-back beachfront studio
+  price: 96
+  price-description: per person based on 2 persons
+  saved: 29
+  expires: 2018/10/28
+  link: https://www.secretescapes.com/the-ellysian-boutique-hotel-placencia-village-belize/sale?utm_source=SE_media&utm_medium=Belize&utm_campaign=October2018
 
 
