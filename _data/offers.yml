@@ -7,7 +7,7 @@
   price: 76
   price-description: per person based on 2 persons
   saved: 26
-  expires: 2018/10/22
+  expires: 2018/11/13
   link: https://www.secretescapes.com/portofino-beach-resort-ambergris-caye-belize/sale?gce_hpp=1&utm_source=SE_media&utm_medium=Belize&utm_campaign=October2018
 
 
@@ -18,7 +18,7 @@
   price: 138
   price-description: per room per night
   saved: 32
-  expires: 2018/10/28
+  expires: 2018/11/13
   link: https://www.secretescapes.com/banyan-bay-suites-san-pedro-belize/sale?utm_source=SE_media&utm_medium=Belize&utm_campaign=October2018
 
 
@@ -29,7 +29,19 @@
   price: 96
   price-description: per person based on 2 persons
   saved: 29
-  expires: 2018/10/28
+  expires: 2018/11/13
   link: https://www.secretescapes.com/the-ellysian-boutique-hotel-placencia-village-belize/sale?utm_source=SE_media&utm_medium=Belize&utm_campaign=October2018
+
+
+
+- title: Grand Colony Island Villas
+  id: grand-colony-island-villas
+  location: San Pedro, Ambergris Caye, Belize
+  description: A villa getaway on the shores of Ambergris Caye, near the Belize Barrier Reef
+  price: 46
+  price-description:  per person based on 4 persons
+  saved: 21
+  expires: 2018/11/13
+  link: https://www.secretescapes.com/grand-colony-island-villas-grand-colony-island-villas-san-pedro-ambergris-caye-belize/sale?utm_source=SE_media&utm_medium=Belize&utm_campaign=November2018
 
 
